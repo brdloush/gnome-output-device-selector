@@ -1,0 +1,9 @@
+{
+  "uuid": "output-device-selector@brdloush",
+  "name": "Output Device Selector",
+  "description": "Press Super+D to pick your audio output from a small popup. Navigate with arrows or h/j/k/l, confirm with Enter. Bluetooth devices are connected on demand.",
+  "shell-version": ["48", "49", "50"],
+  "settings-schema": "org.gnome.shell.extensions.output-device-selector",
+  "url": "https://github.com/brdloush/gnome-output-device-selector",
+  "version-name": "1.0"
+}

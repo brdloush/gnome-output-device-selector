@@ -1,0 +1,173 @@
+/* Output Device Selector */
+
+.ods-backdrop {
+  background-color: rgba(0, 0, 0, 0.28);
+}
+
+.ods-panel {
+  background-color: rgba(28, 28, 32, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 30px;
+  padding: 20px 22px 14px 22px;
+  spacing: 18px;
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.5);
+}
+
+.ods-header {
+  spacing: 8px;
+}
+
+.ods-header-icon {
+  icon-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ods-title {
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ods-cards {
+  spacing: 12px;
+}
+
+/* ---- Card ---- */
+
+.ods-card {
+  width: 152px;
+  padding: 18px 12px 14px 12px;
+  border-radius: 22px;
+  border: 2px solid transparent;
+  background-color: rgba(255, 255, 255, 0.045);
+  transition-duration: 140ms;
+}
+
+.ods-card:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.ods-card.ods-selected {
+  background-color: rgba(255, 255, 255, 0.13);
+  border-color: -st-accent-color;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.ods-card-box {
+  spacing: 4px;
+}
+
+.ods-bubble {
+  width: 78px;
+  height: 78px;
+  border-radius: 39px;
+  margin: 0 8px 10px 8px;
+  background-color: rgba(255, 255, 255, 0.08);
+  transition-duration: 140ms;
+}
+
+.ods-device-icon {
+  icon-size: 38px;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.ods-card.ods-active .ods-bubble {
+  background-color: -st-accent-color;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.ods-card.ods-active .ods-device-icon {
+  color: -st-accent-fg-color;
+}
+
+.ods-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 2px solid rgba(28, 28, 32, 1);
+}
+
+.ods-badge-icon {
+  icon-size: 14px;
+  color: #1c1c20;
+}
+
+.ods-name {
+  font-size: 11.5pt;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.ods-sub {
+  font-size: 8.5pt;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ods-key-hint {
+  font-size: 8pt;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.ods-card.ods-selected .ods-key-hint {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Unplugged / unpaired devices look faded. */
+.ods-card.ods-unavailable .ods-device-icon {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.ods-card.ods-unavailable .ods-name {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ---- Status pill ---- */
+
+.ods-status {
+  margin-top: 8px;
+  padding: 3px 10px;
+  spacing: 6px;
+  border-radius: 99px;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.ods-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.ods-status-label {
+  font-size: 8.5pt;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.ods-status-on { background-color: rgba(87, 227, 137, 0.14); }
+.ods-status-on .ods-dot { background-color: #57e389; }
+.ods-status-on .ods-status-label { color: #8ff0a4; }
+
+.ods-status-busy { background-color: rgba(248, 228, 92, 0.14); }
+.ods-status-busy .ods-dot { background-color: #f8e45c; }
+.ods-status-busy .ods-status-label { color: #f9f06b; }
+
+.ods-status-error { background-color: rgba(255, 123, 99, 0.16); }
+.ods-status-error .ods-dot { background-color: #ff7b63; }
+.ods-status-error .ods-status-label { color: #ffa08f; }
+
+/* ---- Text ---- */
+
+.ods-footer {
+  font-size: 8.5pt;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.ods-empty {
+  padding: 18px 28px;
+  font-size: 10.5pt;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
